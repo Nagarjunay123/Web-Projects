@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="./calculator style.css">
+</head>
+<body>
+    <input type="color" id="color">
+    <marquee behavior="slide" id="marq">Select background color here</marquee>
+    <main id="main_content">
+    <div>
+        <h1 id="heading">Simple Calculator</h1>
+    </div>
+    <div id="cal">
+        <input type="text" placeholder="Enter First number" id="first" required>
+        <select id="select" name="add">
+            <option value="add">Addition(+)</option>
+            <option value="sub">Subtraction(-)</option>
+            <option value="mul">Multiplication(*)</option>
+            <option value="div">Divison(/)</option>
+        </select>
+        <input type="text" placeholder="Enter second number" id="second" required>
+    </div>
+    <div id="button"><input type="submit" value="Calculate" id="btn"></div>
+    <div id="result">
+        <h3 id="res">Result : </h3>
+    </div>
+</main>
+    <script src="./calculator script.js"></script>
+</body>
+</html>
