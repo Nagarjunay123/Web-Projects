@@ -12,11 +12,6 @@ color.addEventListener("change",()=>{
     marquee.style.color="white"
 });
 
-let add = (a,b)=>a+b;
-let sub = (a,b)=>a-b;
-let mul = (a,b)=>a*b;
-let div = (a,b)=>a/b;
-
 btn.addEventListener("click",()=>{
     if(first.value=="" || second.value==""){
         alert("Please Enter values");
@@ -27,16 +22,16 @@ btn.addEventListener("click",()=>{
             
     switch(select.value){
         case "add":
-            res.innerHTML=`Result : ${add(num1,num2)}`;
+            res.innerHTML=`Result : ${num1+num2}`;
             break;
         case "sub":
-            res.innerHTML=`Result : ${sub(num1,num2)}`;
+            res.innerHTML=`Result : ${num1-num2}`;
             break;
         case "mul":
-            res.innerHTML=`Result : ${mul(num1,num2)}`;
+            res.innerHTML=`Result : ${num1*num2}`;
             break;
         case "div":
-            res.innerHTML=`Result : ${div(num1,num2)}`;
+            res.innerHTML=`Result : ${num1/num2}`;
             break;
         }
     }
