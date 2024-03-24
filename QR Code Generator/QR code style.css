@@ -28,11 +28,11 @@ h1{
 }
 #link{
     height: 35px;
-    width: 200px;
+    width: 210px;
     border: 1px solid black;
     border-radius: 15px;
     font-size: 20px;
-    padding: 10px;
+    padding: 8px;
 }
 #link::placeholder{
     font-size: 16px;

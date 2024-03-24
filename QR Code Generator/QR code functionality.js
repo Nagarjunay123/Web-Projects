@@ -1,7 +1,6 @@
 let body=document.querySelector("body");
 let form=document.querySelector("form");
-let refresh=document.getElementById("refresh");
-
+let img=document.createElement("img");
 form.addEventListener("submit",(e) => {
     e.preventDefault();    
     let inputvalue=document.querySelector("input").value;
@@ -10,15 +9,7 @@ form.addEventListener("submit",(e) => {
     }
     else{
     let qr=`https://chart.googleapis.com/chart?cht=qr&chs=400x400&chl=${inputvalue}`
-    let img=document.createElement("img");
     img.setAttribute("src",qr)
     body.appendChild(img);
-    let gen=document.getElementById("button");
-    gen.style.visibility="hidden";
-    refresh.style.visibility="visible"
-    }
-    
-})
-refresh.addEventListener("click",()=>{
-    location.reload()
+    }    
 })
